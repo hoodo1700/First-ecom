@@ -1,0 +1,10 @@
+{%extends 'base.html'%}
+{%block content%}
+<h1>poromotion</h1>
+{%for poromotion in poromotions%}
+<h1>{{poromotion.title}}</h1>
+<img src="{{poromotion.image.url}}" alt="{{poromotion.title}}">
+
+{%endfor%}
+{%endblock%}
+
